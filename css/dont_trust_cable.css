@@ -6387,13 +6387,25 @@ a:hover {
   font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
 .jumbotron.developer span h2 {
-  font-size: 60px !important;
+  font-size: 35px ;
   opacity: .6;
 }
+@media only screen and (min-width: 768px ) {
+  .jumbotron.developer span span h2 {
+    font-size: 60px !important;
+  }
+  .jumbotron.developer span h2 {
+    font-size: 78px !important;
+    line-height: 84px;
+  }
+}
 .jumbotron.developer .share {
-  padding-bottom: 60px;
+  padding-bottom: 0px;
 }
 @media only screen and (min-width: 768px ) {
+  .jumbotron.developer .share {
+    padding-bottom: 60px;
+  }
   .jumbotron.developer .row .col-centered {
     max-width: 600px;
   }
@@ -6415,8 +6427,9 @@ a:hover {
 }
 .jumbotron.developer a {
   color: #ffffff;
-  display: inline block;
+  display: block;
   padding: 10px 20px;
+  line-height: 50px;
   text-transform: uppercase;
   font-weight: bold;
   background: #dddee0;
@@ -6424,6 +6437,12 @@ a:hover {
   border-radius: 2px;
   box-shadow: 0 2px 1px rgba(0, 0, 0, 0.3);
   border: 1px solid rgba(255, 255, 255, 0.2);
+  line-height: 20px;
+}
+@media only screen and (min-width: 768px ) {
+  .jumbotron.developer a {
+    display: inline-block !important;
+  }
 }
 .jumbotron.developer a:hover {
   box-shadow: none;
