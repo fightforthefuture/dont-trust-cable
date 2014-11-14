@@ -6384,6 +6384,10 @@ a.twitter {
 a.googleplus {
   color: #DB585A;
 }
+img {
+  margin: 20px 0;
+  max-width: 100%;
+}
 .jumbotron {
   margin: 0 auto;
   max-width: 950px;
@@ -6413,19 +6417,23 @@ a.googleplus {
 .jumbotron.developer h2 {
   text-shadow: none !important ;
   color: #fff;
-  font-size: 78px !important;
-  line-height: 84px;
+  font-size: 30px !important;
+  line-height: 40px;
   font-weight: bold  !important;
   font-family: 'Helvetica Neue', Helvetica, sans-serif !important;
 }
+@media only screen and (min-width: 768px ) {
+  .jumbotron.developer h2 {
+    font-size: 78px !important;
+    line-height: 84px;
+  }
+}
 .jumbotron.developer span h2 {
-  font-size: 35px ;
+  font-size: 30px !important;
+  line-height: 32px;
   opacity: .6;
 }
 @media only screen and (min-width: 768px ) {
-  .jumbotron.developer span span h2 {
-    font-size: 60px !important;
-  }
   .jumbotron.developer span h2 {
     font-size: 78px !important;
     line-height: 84px;
